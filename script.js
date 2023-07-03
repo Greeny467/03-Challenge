@@ -86,7 +86,7 @@ function writePassword() {
   else if (passlength.value == ""){
     passwordText.value = "Whoops, you forgot to add a length";
   }
-  else if (passlength.value <= 8){
+  else if (passlength.value < 8){
     passwordText.value = password + "  is your password, but we suggest you increase the length."
   }
   else{
